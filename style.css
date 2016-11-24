@@ -1,0 +1,259 @@
+@import url(https://fonts.googleapis.com/css?family=Trade+Winds);
+
+html {width: 100%;}
+
+body {
+    margin: 0px;
+    background: url('images/navy.png');
+    font-family: 'Trade Winds';
+    background-color: black;
+}
+
+footer {
+  position: absolute;
+  background: url('images/snow.png');
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 102px;
+  bottom: 0;
+  margin-bottom: 0px;
+  box-shadow: 0 0 10px 1px #C4EDE4;
+}
+
+
+/* PLUS SCORE */
+.score, .startButton, #plusScore, #plusTealScore, #plusLilacScore {
+    display: inline-block;
+}
+
+.score {
+    color: white;
+    text-shadow: 0px 2px 2px rgba(91,88,90, 0.4);
+    #opacity: 0.8;
+    font-size: 40px;
+    margin: 15px;
+    margin-left: 40px;
+}
+
+
+#plusScore, #plusTealScore, #plusLilacScore {
+    font-size: 24px;
+    position: absolute;
+    display: none;
+}
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes fadeOutUp {
+  0% {opacity: 1;color: #e5e500;}
+  50% {opacity: 1;color: #91CFCA;}
+  100% {opacity: 0;-webkit-transform: translateY(-100%);transform: translateY(-100%);}
+}
+
+@keyframes fadeOutUp {
+  0% {opacity: 1; color: #e5e500;}
+  50% {opacity: 1;color: #91CFCA;}
+  100% {opacity: 0;-webkit-transform: translateY(-100%);transform: translateY(-100%);}
+}
+
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+/* END OF PLUS SCORE */
+
+.logo {
+    display: inline-block;
+    right: 5px;
+    position: absolute;
+    height: 100px;
+    width: 200px;
+}
+.startButton {
+    width: 150px;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    color: #91CFCA;
+    text-align: center;
+    background: none;
+    border: 4px inset #91CFCA;
+    transition: 2s;
+    margin-left: 40px;
+}
+
+.startButton:hover {
+    color: #BF4D28;
+    background: none;
+    border: 4px inset #BF4D28;
+}
+
+.startButton:focus {outline: none;}
+
+/* HOME LINK */
+.returnHome {
+    color: white;
+    text-indent: 10px;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+a {color: #C4EDE4;}
+
+a:hover {text-decoration: none;color: #91CFCA;}
+
+
+#game {
+    position: absolute;
+    background-color: rgba(12,12,12);
+    opacity: 0.5;
+    border: 4px outset #C4EDE4;
+    height: 75vh;
+    width:700px;
+    background: #191919;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+
+
+#icedragon {
+    position: absolute;
+    width: 50px;
+    padding: 5px;
+}
+
+.treasure {
+    position: absolute;/*actually moves it to random location*/
+    width: 20px;
+    height: 20px;
+}
+
+.treasure_teal {
+    position: absolute;/*actually moves it to random location*/
+    width: 20px;
+    height: 20px;
+}
+
+.treasure_mega {
+    position: absolute;/*actually moves it to random location*/
+    width: 20px;
+    height: 20px;
+}
+
+.fire {
+    position: absolute;/*actually moves it to random location*/
+    width: 20px;
+    height: 20px;
+}
+
+/* sidebar.html*/
+.glyphicon-info-sign {
+    color: #C4EDE4;
+}
+
+#sidebar {
+    font-family: 'Trade Winds' !important;
+    background-color: #373B44;
+    padding: 0;
+    font-size: 18px;
+    #background: url('images/header.png');
+    border: 5px outset #373B44;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    width: 240px;
+    #z-index: 1;
+    color: #C4EDE4;
+    transform: translateX(100%);
+    transition-duration: 1s;
+}
+#sidebar:hover{
+    transform: translateX(0%);
+}
+#sidebar:hover .sidebar-handle{
+    opacity: .3;
+}
+#sidebar .sidebar-handle{
+    height: 58px;
+    width: 58px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-100%);
+    font-size: 58px;
+    line-height: 58px;
+    transition-duration: 1s;
+}
+
+#sidebar .link-text {
+    visibility: hidden;
+}
+
+#sidebar:hover .link-text {
+    visibility: visible;
+}
+
+#happy, #norm, #defeated {
+    position: absolute;
+    right: 10px;
+    bottom: 100px;
+    opacity: 0.5;
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+  /* position: absolute; */
+  background: url('images/navy.png');
+  border-radius: 5px;
+  top: 138px;
+  margin-left: 80px;
+}
+.modal-header, .modal-footer {
+    border-bottom: 5px solid rgba(11,11,15, 0.1);
+    border-top: 5px solid rgba(11,11,15, 0.1);
+}
+.modal-title {
+    text-align: center;
+    font-size: 55px;
+    color: #B6DEEA;
+    text-shadow: 0px 2px 2px rgba(91,88,90, 0.4);
+}
+
+.coin_value {
+    border: 2px dashed rgba(0,0,0, 0.2);
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.center_text {
+    text-align: center;
+    font-size: 40px;
+    color: #B6DEEA;
+}
+
+.resetButton {
+    background: #B6DEEA;
+    border: none;
+    font-size: 20px;
+    width: 150px;
+    width: 274px;
+    height: 40px;
+    box-shadow: 0 6px 0 0 #5b6f75;
+}
+
+.center_text {
+  font-size: 18px;
+}

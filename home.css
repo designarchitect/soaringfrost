@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Trade+Winds);
+
+body {
+  font-family: 'Trade Winds';
+  background: url('images/ice1.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-size: 100%;
+  height: 100%;
+}
+
+
+h1 {
+	color: white;
+}
+
+.logo {
+  margin-top: 5px;
+}
+
+#snow {
+	background: none;
+	background-image:
+	url('images/snow1.png'),
+	url('images/snow2.png'),
+	url('images/snow3.png');
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+/*  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}*/
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+/*@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+*/
+
+.iceBlock {
+	background-repeat: repeat-x;
+}
+
+.startgame {
+  width: 300px;
+  height: 45px;
+  color: white;
+  border: none;
+  font-size: 18px;
+  text-align: center;
+  background: #91CFCA;
+  border-radius: 5px;
+  font-size: 30px;
+  transition: 0.7s;
+  margin-left: 75px;
+  margin-bottom: 44px;
+  bottom: 64px;
+  box-shadow: 0 6px 0 0 #3B8686;
+  position: relative;
+}
+
+.startgame:hover {
+    color: white;
+    background: #99ECEA;
+    box-shadow: 0 6px 0 0 #3B8686;
+}
+
+.startgame:focus {
+    outline: none;
+}
+
+#audio {
+  position: absolute;
+  bottom: 18px;
+  left: 70%;
+}
+
+#contain {
+position: relative;
+#margin: 50px auto 0;
+left: 30%;
+}
+
+#frost {
+  animation: fly 2s steps(10) infinite;
+  background:
+  url('images/frostseqc.png') 0 0 no-repeat;
+  width: 400px;
+  margin-left: 47px;
+  height: 400px;
+  #margin: 100px auto 0;
+  position: relative;
+  bottom: 46px;
+
+}
+@keyframes fly {
+  0% {background-position: 0 0;}
+  100% {background-position: -4000px 0;}
+}
+/* Firefox*/
+@-moz-keyframes fly {
+  0% {background-position: 0 0;}
+  100% {background-position: -4000px 0;}
+}
+/*Chrome, Safari, Opera*/
+@-webkit-keyframes fly {
+  0% {background-position: 0 0;}
+  100% {background-position: -4000px 0;}
+}
+/*Internet Explorer*/
+@-ms-keyframes fly {
+  0% {background-position: 0 0;}
+  100% {background-position: -4000px 0;}
+}

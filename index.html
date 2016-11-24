@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+
+    <!-- Custom Font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src='icy.js'></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="image/png" href="images/coin_teal.png" sizes="16x16">
+    <title>Soaring Frost</title>
+</head>
+<body>
+
+  <div id="snow"></div>
+
+  <div id="contain">
+  <!-- <h1>soaring frost</h1> -->
+  <img class="logo" src="images/icelogo2.png">
+  <!-- <img class="iceBlock" src="images/iceblock.png"> -->
+  <div id="frost"></div>
+  <form action="game.html">
+	 <button type='submit' class="startgame" id='startGame' onclick="pauseAudio()">start game</button>
+  </form>
+</div>
+
+<!--   <button onclick="document.getElementById('audio').pause()">Pause Music</button> -->
+  <audio loop autoplay id="audio"> <!-- insert when i'm ready: autoplay or controls="controls" -->
+    <source src="audio/SillyFun.mp3" type='audio/mpeg; codecs="mp3"'>
+    <source src="audio/SillyFun.ogg" type='audio.ogg; codecs="vorbis"'>
+  </audio>
+</body>
+</html>
